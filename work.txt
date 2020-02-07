@@ -1,0 +1,38 @@
+$ git init
+$ touch hello.txt
+$ git add .
+$ git commit -m "Very first file"
+$ git remote add origin https://github.com/MargaritaBychek/Lab0.git
+$ git push --set-upstream origin master
+$ git checkout -b develop
+$ git push --set-upstream origin develop
+$ git checkout -b analysis
+$ start hello.txt//Add the first line to file
+$ git add .
+$ git commit -m "Added the first line"
+$ git push --set-upstream origin analysis
+$ git checkout develop
+$ git clone https://github.com/MargaritaBychek/Lab0.git
+$ cd ..
+$ cd Lab0
+$ git checkout develop
+$ git merge
+$ git checkout -b test
+$ start hello.txt //Add another new line
+$ git add .
+$ git commit -m "New line"
+$ git push --set-upstream origin test
+$ cd ..
+$ cd Laba0
+$ git merge analysis
+$ git push
+$ cd ..
+$ cd Lab0
+$ git checkout develop
+$ git merge test
+$ git pull// here there is a conflist
+$ start hello.txt//Correct
+$ git add .
+$ git commit -m "Merge"
+$ git push
+//The end
